@@ -18,6 +18,7 @@ http://127.0.0.1:8001/
 
 
 ## Resources
-* https://www.mkdocs.org/
-* https://romandc.com/techtalk-mkdocs/
+* [MkDocs docs](https://www.mkdocs.org/)
+* [MkDocs tutorial](https://romandc.com/techtalk-mkdocs/)
+* [Mkdocs themes](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes)
 * [Markdown examples](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html)
