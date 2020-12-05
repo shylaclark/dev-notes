@@ -1,9 +1,6 @@
-# Welcome to MkDocs
+# Dev Notes
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-[comment]: <> (Run mkdocs serve)
-[comment]: <> (in the project root directory)
 
 ## Notes
 
