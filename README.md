@@ -13,16 +13,11 @@ Written in markdown and built using mkdocs.
 
 ### Run
 
-Run locally:
-  mkdocs serve
+Run locally: `mkdocs serve`
 
-Access your site:
-http://127.0.0.1:8001/
+Access your site: `http://127.0.0.1:8001/``
 
-Deploy to GitHub pages:
-```
-mkdocs gh-deploy
-```
+Deploy to GitHub pages: `mkdocs gh-deploy`
 
 
 ## Resources
