@@ -1,6 +1,9 @@
 site_name: My Notes
 dev_addr: '127.0.0.1:8001'
 
-theme:
-  name: readthedocs
+# theme:
+#   name: readthedocs
 
+pages:
+  - Home: 'README.md'
+theme: readthedocs
