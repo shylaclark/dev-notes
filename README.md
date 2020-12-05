@@ -14,9 +14,8 @@ Written in markdown and built using mkdocs.
 ### Run
 
 Run locally:
-```
-mkdocs serve
-```
+  mkdocs serve
+
 Access your site:
 http://127.0.0.1:8001/
 
