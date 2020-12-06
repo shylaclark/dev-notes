@@ -1,0 +1,2340 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
+    
+    
+      
+        <title>Web Services - My Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6910b76c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#web-services" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="My Notes" class="md-header-nav__button md-logo" aria-label="My Notes">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            My Notes
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Web Services
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="My Notes" class="md-nav__button md-logo" aria-label="My Notes">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    My Notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Dev Notes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ant/" class="md-nav__link">
+      Ant
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../atom/" class="md-nav__link">
+      Atom Best Practices
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../bitbucket-sop/" class="md-nav__link">
+      Bitbucket sop
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../build.xml/" class="md-nav__link">
+      Build.xml
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../cs-basics/" class="md-nav__link">
+      CS Basics
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../curl/" class="md-nav__link">
+      Curl
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../design-patterns/" class="md-nav__link">
+      Web Design Patterns
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../django/" class="md-nav__link">
+      Django
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../docker/" class="md-nav__link">
+      Docker
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../git-crib-sheet/" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../gitlab-sop/" class="md-nav__link">
+      GitLab Standard Operating Procedures
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../gradle/" class="md-nav__link">
+      Gradle
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../hg-crib-sheet/" class="md-nav__link">
+      Mercurial Crib Sheet
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../intellij/" class="md-nav__link">
+      IntelliJ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../latex/" class="md-nav__link">
+      Latex
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../mysys2/" class="md-nav__link">
+      Mysys2
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../npm-yarn/" class="md-nav__link">
+      npm and Yarn
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../package-management/" class="md-nav__link">
+      Package Management
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ruby-rails/" class="md-nav__link">
+      Rails
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../scripts/" class="md-nav__link">
+      Scripts
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../scrum/" class="md-nav__link">
+      Scrum
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../time-management/" class="md-nav__link">
+      Time management
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tomcat/" class="md-nav__link">
+      Tomcat
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user-stories/" class="md-nav__link">
+      User Stories
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../vcs/" class="md-nav__link">
+      Version Control Systems (VCS)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../virtual-env/" class="md-nav__link">
+      Virtual Environment
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Web Services
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Web Services
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources_1" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    Best Practices
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-keep-it-simple" class="md-nav__link">
+    1. Keep it simple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-use-nouns-not-verbs" class="md-nav__link">
+    2. Use nouns -- not verbs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-use-of-right-http-methods" class="md-nav__link">
+    3. Use of right HTTP methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-use-plurals" class="md-nav__link">
+    4. Use plurals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-use-parameters" class="md-nav__link">
+    5. Use parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-use-proper-http-codes" class="md-nav__link">
+    6. Use proper HTTP codes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-pagination" class="md-nav__link">
+    Use pagination
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-supported-formats" class="md-nav__link">
+    7. Supported formats
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-use-proper-error-messages" class="md-nav__link">
+    8. Use proper error messages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-use-of-open-api-specifications" class="md-nav__link">
+    9. Use of Open API specifications
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jax-rs" class="md-nav__link">
+    JAX-RS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    Definition
+  </a>
+  
+    <nav class="md-nav" aria-label="Definition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xsd-xml-schema-declaration" class="md-nav__link">
+    XSD (XML Schema Declaration)
+  </a>
+  
+    <nav class="md-nav" aria-label="XSD (XML Schema Declaration)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-schema-defines" class="md-nav__link">
+    A Schema Defines:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jaxb-requires" class="md-nav__link">
+    JAXB Requires:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-jaxb" class="md-nav__link">
+    Benefits of JAXB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xsd" class="md-nav__link">
+    XSD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#marshalling-unmarshalling" class="md-nav__link">
+    Marshalling &amp; Unmarshalling
+  </a>
+  
+    <nav class="md-nav" aria-label="Marshalling &amp; Unmarshalling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#marshalling" class="md-nav__link">
+    Marshalling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unmarshalling" class="md-nav__link">
+    Unmarshalling
+  </a>
+  
+    <nav class="md-nav" aria-label="Unmarshalling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-xsd" class="md-nav__link">
+    No XSD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-xsd" class="md-nav__link">
+    With XSD
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-name-prefixes" class="md-nav__link">
+    Using Name Prefixes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources_2" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serialization" class="md-nav__link">
+    Serialization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    Validation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basics" class="md-nav__link">
+    Basics
+  </a>
+  
+    <nav class="md-nav" aria-label="Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#index" class="md-nav__link">
+    Index
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    Search
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versions" class="md-nav__link">
+    Versions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources_3" class="md-nav__link">
+    Resources
+  </a>
+  
+    <nav class="md-nav" aria-label="Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jax-ws" class="md-nav__link">
+    JAX WS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-29" type="checkbox" id="nav-29" >
+    <label class="md-nav__link" for="nav-29">
+      Data
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Data" data-md-level="1">
+      <label class="md-nav__title" for="nav-29">
+        <span class="md-nav__icon md-icon"></span>
+        Data
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../data/" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../data/geojson/" class="md-nav__link">
+      GeoJSON
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../data/json/" class="md-nav__link">
+      JSON
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../data/xml/" class="md-nav__link">
+      XML
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-30" type="checkbox" id="nav-30" >
+    <label class="md-nav__link" for="nav-30">
+      Dev ops
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Dev ops" data-md-level="1">
+      <label class="md-nav__title" for="nav-30">
+        <span class="md-nav__icon md-icon"></span>
+        Dev ops
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-30-1" type="checkbox" id="nav-30-1" >
+    <label class="md-nav__link" for="nav-30-1">
+      New horizons course
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="New horizons course" data-md-level="2">
+      <label class="md-nav__title" for="nav-30-1">
+        <span class="md-nav__icon md-icon"></span>
+        New horizons course
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/" class="md-nav__link">
+      New Horizons Course: DevOps Continuous Delivery Architect (CDA)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/1-concepts/" class="md-nav__link">
+      Module 1: Continuous Delivery Concepts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/2-culture/" class="md-nav__link">
+      Module 2: Collaborative Culture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/3-design/" class="md-nav__link">
+      Module 3: Design Practices for CD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/4-ci-testing/" class="md-nav__link">
+      Module 4: Continuous Integration and Testing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/5-security/" class="md-nav__link">
+      Module 5: Security Assurance
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/6-cd/" class="md-nav__link">
+      Module 6: Continuous Deployment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/7-toolchain/" class="md-nav__link">
+      Module 7: Infrastructure and the DevOps Toolchain
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/8-monitoring/" class="md-nav__link">
+      Module 8: Continuous Monitoring Measurement and Improvement
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-31" type="checkbox" id="nav-31" >
+    <label class="md-nav__link" for="nav-31">
+      Java
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Java" data-md-level="1">
+      <label class="md-nav__title" for="nav-31">
+        <span class="md-nav__icon md-icon"></span>
+        Java
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/" class="md-nav__link">
+      java-notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/how-to-deploy-war/" class="md-nav__link">
+      7442 Deploy War SOP
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/intellij/" class="md-nav__link">
+      IntelliJ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/java/" class="md-nav__link">
+      Java
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/javafx/" class="md-nav__link">
+      JavaFX
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/jaxb/" class="md-nav__link">
+      Jaxb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/lucene/" class="md-nav__link">
+      LUCENE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/make-a-servlet/" class="md-nav__link">
+      Make a Servlet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/tomcat/" class="md-nav__link">
+      Tomcat
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/velocity/" class="md-nav__link">
+      Velocity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/xjc/" class="md-nav__link">
+      Xjc
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-32" type="checkbox" id="nav-32" >
+    <label class="md-nav__link" for="nav-32">
+      Js
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Js" data-md-level="1">
+      <label class="md-nav__title" for="nav-32">
+        <span class="md-nav__icon md-icon"></span>
+        Js
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/" class="md-nav__link">
+      js-notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/ajax/" class="md-nav__link">
+      Ajax
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/flux/" class="md-nav__link">
+      Flux
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/gatsby/" class="md-nav__link">
+      Gatsby
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/html/" class="md-nav__link">
+      Html
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/javascript/" class="md-nav__link">
+      JavaScript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/jquery/" class="md-nav__link">
+      jQuery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/js/" class="md-nav__link">
+      JavaScript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/openlayers/" class="md-nav__link">
+      Openlayers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/react/" class="md-nav__link">
+      React
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/wkt/" class="md-nav__link">
+      WKT
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-33" type="checkbox" id="nav-33" >
+    <label class="md-nav__link" for="nav-33">
+      Latex
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Latex" data-md-level="1">
+      <label class="md-nav__title" for="nav-33">
+        <span class="md-nav__icon md-icon"></span>
+        Latex
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../latex/" class="md-nav__link">
+      LaTeX
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-34" type="checkbox" id="nav-34" >
+    <label class="md-nav__link" for="nav-34">
+      Python
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Python" data-md-level="1">
+      <label class="md-nav__title" for="nav-34">
+        <span class="md-nav__icon md-icon"></span>
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/" class="md-nav__link">
+      Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/conda/" class="md-nav__link">
+      Conda
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/panel/" class="md-nav__link">
+      Holoviz Panel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-34-4" type="checkbox" id="nav-34-4" >
+    <label class="md-nav__link" for="nav-34-4">
+      New horizons course
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="New horizons course" data-md-level="2">
+      <label class="md-nav__title" for="nav-34-4">
+        <span class="md-nav__icon md-icon"></span>
+        New horizons course
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/new-horizons-course/" class="md-nav__link">
+      python-course
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/new-horizons-course/notes/" class="md-nav__link">
+      Python with Data Science
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-35" type="checkbox" id="nav-35" >
+    <label class="md-nav__link" for="nav-35">
+      Rest
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Rest" data-md-level="1">
+      <label class="md-nav__title" for="nav-35">
+        <span class="md-nav__icon md-icon"></span>
+        Rest
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rest/api/" class="md-nav__link">
+      APIs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rest/rest/" class="md-nav__link">
+      REST API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-36" type="checkbox" id="nav-36" >
+    <label class="md-nav__link" for="nav-36">
+      Sys prog
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Sys prog" data-md-level="1">
+      <label class="md-nav__title" for="nav-36">
+        <span class="md-nav__icon md-icon"></span>
+        Sys prog
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sys-prog/" class="md-nav__link">
+      Systems Programming
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sys-prog/linux-commands/" class="md-nav__link">
+      Linux Commands
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-37" type="checkbox" id="nav-37" >
+    <label class="md-nav__link" for="nav-37">
+      Vim
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Vim" data-md-level="1">
+      <label class="md-nav__title" for="nav-37">
+        <span class="md-nav__icon md-icon"></span>
+        Vim
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vim/" class="md-nav__link">
+      My Vim Cheatsheet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vim/note-taking-with-vim/" class="md-nav__link">
+      Notetaking with Vim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vim/vim-crib-sheet/" class="md-nav__link">
+      Vim Crib Sheet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-37-4" type="checkbox" id="nav-37-4" >
+    <label class="md-nav__link" for="nav-37-4">
+      Vimwiki starter
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Vimwiki starter" data-md-level="2">
+      <label class="md-nav__title" for="nav-37-4">
+        <span class="md-nav__icon md-icon"></span>
+        Vimwiki starter
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vim/vimwiki-starter/" class="md-nav__link">
+      My Knowledge Base
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources_1" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    Best Practices
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-keep-it-simple" class="md-nav__link">
+    1. Keep it simple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-use-nouns-not-verbs" class="md-nav__link">
+    2. Use nouns -- not verbs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-use-of-right-http-methods" class="md-nav__link">
+    3. Use of right HTTP methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-use-plurals" class="md-nav__link">
+    4. Use plurals
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-use-parameters" class="md-nav__link">
+    5. Use parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-use-proper-http-codes" class="md-nav__link">
+    6. Use proper HTTP codes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-pagination" class="md-nav__link">
+    Use pagination
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-supported-formats" class="md-nav__link">
+    7. Supported formats
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-use-proper-error-messages" class="md-nav__link">
+    8. Use proper error messages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-use-of-open-api-specifications" class="md-nav__link">
+    9. Use of Open API specifications
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jax-rs" class="md-nav__link">
+    JAX-RS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    Definition
+  </a>
+  
+    <nav class="md-nav" aria-label="Definition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xsd-xml-schema-declaration" class="md-nav__link">
+    XSD (XML Schema Declaration)
+  </a>
+  
+    <nav class="md-nav" aria-label="XSD (XML Schema Declaration)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-schema-defines" class="md-nav__link">
+    A Schema Defines:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jaxb-requires" class="md-nav__link">
+    JAXB Requires:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-jaxb" class="md-nav__link">
+    Benefits of JAXB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xsd" class="md-nav__link">
+    XSD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#marshalling-unmarshalling" class="md-nav__link">
+    Marshalling &amp; Unmarshalling
+  </a>
+  
+    <nav class="md-nav" aria-label="Marshalling &amp; Unmarshalling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#marshalling" class="md-nav__link">
+    Marshalling
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unmarshalling" class="md-nav__link">
+    Unmarshalling
+  </a>
+  
+    <nav class="md-nav" aria-label="Unmarshalling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-xsd" class="md-nav__link">
+    No XSD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#with-xsd" class="md-nav__link">
+    With XSD
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-name-prefixes" class="md-nav__link">
+    Using Name Prefixes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources_2" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serialization" class="md-nav__link">
+    Serialization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    Validation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basics" class="md-nav__link">
+    Basics
+  </a>
+  
+    <nav class="md-nav" aria-label="Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#index" class="md-nav__link">
+    Index
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    Search
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versions" class="md-nav__link">
+    Versions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources_3" class="md-nav__link">
+    Resources
+  </a>
+  
+    <nav class="md-nav" aria-label="Resources">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jax-ws" class="md-nav__link">
+    JAX WS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="web-services">Web Services</h1>
+<p>A Web service is merely an API wrapped in HTTP.</p>
+<p>A Web service always needs a network for its operation.</p>
+<p>A Web service uses only SOAP, REST and XML-RPC for communication.</p>
+<p>No visual interface.</p>
+<p>Protocol Buffers</p>
+<p>Human to App
+Web browser sends HTTP GET request and server sends HTTP response.</p>
+<p>App to App (back end)
+App sends XML request and server sends XML response.</p>
+<p>What is a web service?
+Service that's available over a network, uses a standardized XML messaging system, and is not tied to any one operating system or programming language.</p>
+<ul>
+<li>Helps integrate one enterprise app w/ another.</li>
+<li>Talk to each other using HTTP &amp; XML or JSON.</li>
+<li>All web services are APIs, but not all APIs are web services.</li>
+</ul>
+<p>What is the web service protocol stack?</p>
+<p>What is XML messaging?</p>
+<p>Service description?</p>
+<p>Service discovery?</p>
+<p>Thin clients (soft clients) prototype: students</p>
+<p>Swagger UI</p>
+<p>Postman</p>
+<p>xjc
+- Schema to Java compiler</p>
+<p>This line goes in build.xml:
+<xjc schema=________ destdir=________ extension="true" /></p>
+<h2 id="resources">Resources</h2>
+<p><a href="https://en.wikipedia.org/wiki/Service-oriented_architecture">Service-Oriented Architecture</a></p>
+<p><a href="https://javarants.com/using-jax-rs-with-protocol-buffers-for-high-performance-rest-apis-563ce40d15d9">Using JAX-RS with Protocol Buffers</a></p>
+<p><a href="https://sleeplessinslc.blogspot.com/2010/03/restful-representation-with-google.html">Google Protocol Buffer</a></p>
+<p><a href="https://developers.google.com/protocol-buffers/docs/javatutorial?csw=1">Google Tutorial</a></p>
+<h2 id="resources_1">Resources</h2>
+<p><a href="https://javarants.com/using-jax-rs-with-protocol-buffers-for-high-performance-rest-apis-563ce40d15d9">Using JAX-RS with Protocol Buffers</a></p>
+<p><a href="https://sleeplessinslc.blogspot.com/2010/03/restful-representation-with-google.html">Google Protocol Buffer</a></p>
+<p><a href="https://developers.google.com/protocol-buffers/docs/javatutorial?csw=1">Google Tutorial</a></p>
+<p>URIs</p>
+<p><a href="https://stackoverflow.com/questions/4024271/rest-api-best-practices-where-to-put-parameters">rest-api-best-practices-where-to-put-parameters</a></p>
+<p><a href="https://tools.ietf.org/html/rfc6570">RFC spec document</a></p>
+<p>REST</p>
+<p>RESTful APIs</p>
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="1-keep-it-simple">1. Keep it simple</h3>
+<p>We need to make sure that the base URL of the API is simple.</p>
+<p>API to get all products.</p>
+<pre><code>/products
+</code></pre>
+<p>API to get a specific product.</p>
+<pre><code>/products/12345
+</code></pre>
+<h3 id="2-use-nouns-not-verbs">2. Use nouns -- not verbs</h3>
+<h3 id="3-use-of-right-http-methods">3. Use of right HTTP methods</h3>
+<p>RESTful APIs have various methods to indicate the type of operation we are going to perform with this API. We need to make sure we use the right HTTP method for given operation.</p>
+<ul>
+<li>GET — To get a resource or collection of resources.</li>
+<li>POST — To create a resource or collection of resources.</li>
+<li>PUT/PATCH — To update the existing resource or collection of resources.</li>
+<li>DELETE — To delete the existing resource or the collection of resources.</li>
+</ul>
+<h3 id="4-use-plurals">4. Use plurals</h3>
+<p>Using plural avoids confusion whether we are talking about getting single resource or a collection. It also avoids adding additional things like attaching "all" to the base URL e.g. <code>/product/all</code>.</p>
+<h3 id="5-use-parameters">5. Use parameters</h3>
+<p>Sometimes we need an API which should be telling more story than just by id. To avoid long URLs, make use of query parameters to design the API.</p>
+<pre><code>/products?name='ABC'   &lt;-- good
+/getProductsByName     &lt;-- bad
+
+/products?type='xyz'
+/getProductsByType
+</code></pre>
+<h3 id="6-use-proper-http-codes">6. Use proper HTTP codes</h3>
+<p>We have plenty of HTTP codes. Most of us only end up using two — 200 and 500! This is certainly not a good practice. Following are some commonly used HTTP codes.</p>
+<ul>
+<li>200 OK — This is most commonly used HTTP code to show that the operation performed is successful.</li>
+<li>201 CREATED — This can be used when you use POST method to create a new resource.</li>
+<li>202 ACCEPTED — This can be used to acknowledge the request sent to the server.</li>
+<li>400 BAD REQUEST — This can be used when client side input validation fails.</li>
+<li>401 UNAUTHORIZED / 403 FORBIDDEN— This can be used if the user or the system is not authorised to perform certain operation.</li>
+<li>404 NOT FOUND— This can be used if you are looking for certain resource and it is not available in the system.</li>
+<li>500 INTERNAL SERVER ERROR — This should never be thrown explicitly but might occur if the system fails.</li>
+<li>502 BAD GATEWAY — This can be used if server received an invalid response from the upstream server.</li>
+</ul>
+<h3 id="use-pagination">Use pagination</h3>
+<p>Use of pagination is a must when you expose an API which might return huge data and if proper load balancing is not done, the a consumer might end up bringing down the service.</p>
+<p>Use of <code>limit</code> and <code>offset</code> is recommended here. For example, <code>/products?limit=25&amp;offset=50</code>. It is also advised to keep a default limit and default offset.</p>
+<h3 id="7-supported-formats">7. Supported formats</h3>
+<p>If is also important to choose how your API responds. Most of the modern day applications should return JSON responses unless you have an legacy app which still needs to get XML response.</p>
+<h3 id="8-use-proper-error-messages">8. Use proper error messages</h3>
+<p>It is always a good practice to keep set of error messages application sends and respond that with proper id. For example, if you use Facebook graph APIs, in case of errors, it returns message like this —</p>
+<pre><code>{
+  &quot;error&quot;: {
+    &quot;message&quot;: &quot;(#803) Some of the aliases you requested do not exist: products&quot;,
+    &quot;type&quot;: &quot;OAuthException&quot;,
+    &quot;code&quot;: 803,
+    &quot;fbtrace_id&quot;: &quot;FOXX2AhLh80&quot;
+  }
+}
+</code></pre>
+<p>I have also seen some examples in which people return URL with error message which tells you more about the error message and how to handle it as well.</p>
+<h3 id="9-use-of-open-api-specifications">9. Use of Open API specifications</h3>
+<p>In order to keep all teams in your company abide to certain principles, use of <a href="https://swagger.io/resources/open-api/">OpenAPI Specification</a> can be useful. Open API allows you to design your APIs first and share that with the consumers in easier manner.</p>
+<h2 id="jax-rs">JAX-RS</h2>
+<p>Standard JAX-RS uses an Application as its configuration class. A "convenience class" (e.g. ApplicationConfig or ResourceConfig) extends Application.</p>
+<p>There a three main ways (in a servlet container) to configure Jersey (JAX-RS):</p>
+<ul>
+<li>With only web.xml</li>
+<li>With both web.xml and an Application/ResourceConfig class</li>
+<li>With only an Application/ResourceConfig class annotated with @ApplicationPath.</li>
+</ul>
+<p>https://stackoverflow.com/questions/45625925/what-exactly-is-the-resourceconfig-class-in-jersey-2</p>
+<p>@QueryParam</p>
+<p>http://www.appsdeveloperblog.com/jax-rs-queryparam/
+https://memorynotfound.com/jaxrs-queryparam-example/</p>
+<p>Jersey
+https://memorynotfound.com/jax-rs-rest-service-example-jersey-java/</p>
+<p>XML</p>
+<p>XML Schemas (XSD)</p>
+<h2 id="definition">Definition</h2>
+<p>A schema is metadata that tells us how our data is structured. Most databases implement some form of schema which enables us to reason about our data in a more structured manner. The WordPress REST API utilizes JSON Schema to handle the structuring of its data. You can implement endpoints without using a schema, but you will be missing out on a lot of things. It is up to you to decide what suits you best.</p>
+<h3 id="xsd-xml-schema-declaration">XSD (XML Schema Declaration)</h3>
+<p>A schema is an XML specification that governs the allowable components of an XML document and the relationships between the components. An XML document doesn't have to have a schema. A valid XML document must conform to its schema.
+- XML schema definition
+- Used for validation</p>
+<h4 id="a-schema-defines">A Schema Defines:</h4>
+<ul>
+<li>The elements that can appear in an XML document</li>
+<li>The order they must appear in</li>
+<li>The attributes they can have</li>
+<li>Which elements are subordinate (that is, are child elements) to other elements</li>
+</ul>
+<h4 id="jaxb-requires">JAXB Requires:</h4>
+<ul>
+<li>The XML document you want to access has a schema</li>
+<li>The schema is written in the W3C XML Schema Language</li>
+</ul>
+<p>JAXB</p>
+<p><em>Java Architecture for XML Binding (JAXB)</em></p>
+<p>You can parse XML using SAX and DOM; however, this is unnecessary with JAXB.</p>
+<h2 id="benefits-of-jaxb">Benefits of JAXB</h2>
+<ul>
+<li>Makes it easier to access XML documents from applications written in the Java programming language.</li>
+<li>Allows Java developers to access and process XML data without having to know XML or XML processing. For example, there's no need to create or use a SAX parser or write callback methods.</li>
+</ul>
+<h2 id="xsd">XSD</h2>
+<p><a href="https://www.w3schools.com/xml/schema_intro.asp">"XML Schema Definition"</a></p>
+<p>An XML Schema (.xsd file) describes the structure of an XML document. It's used to define what elements and attributes may appear in an XML document. It also defines the relationship of the elements and what data may be stored in them.</p>
+<h2 id="marshalling-unmarshalling">Marshalling &amp; Unmarshalling</h2>
+<p><a href="http://techtipsjava.blogspot.com/2012/06/marshalling-and-unmarshalling-data.html">Marshalling and Unmarshalling XML data using JAXB</a></p>
+<h3 id="marshalling">Marshalling</h3>
+<ul>
+<li>"writing XML data"</li>
+<li>Convert a Java object into XML file</li>
+<li><a href="https://memorynotfound.com/convert-java-object-xml-specific-order-using-jax-b/">Convert Java Object to XML specific order using JAX-B</a></li>
+</ul>
+<h3 id="unmarshalling">Unmarshalling</h3>
+<ul>
+<li>"reading xml data"</li>
+<li>Convert XML files to Java objects</li>
+</ul>
+<h4 id="no-xsd">No XSD</h4>
+<ul>
+<li>Model your data as Java classes.</li>
+<li>Add JAXB annotations to these classes.</li>
+<li>Use JAXB to generate an XML schema for your data.</li>
+</ul>
+<p>Run the Schema Generator in terminal:</p>
+<pre><code>$ schemagen Product.java
+</code></pre>
+<h4 id="with-xsd">With XSD</h4>
+<p><a href="https://docs.oracle.com/cd/E19316-01/819-3669/bnazf/index.html">Oracle Binding between XML Schema and Java Classes</a>
+* Bind the schema into a set of Java classes that represents the schema.
+* Unmarshal the document into Java content objects. The Java content objects represent the content and organization of the XML document, and are directly available to your program. xjc command generates the source code for Java classes that correspond to the types defined in the .xsd file.</p>
+<p>Run the JAXB schema compiler tool in terminal:</p>
+<pre><code>$ xjc Product.xsd
+</code></pre>
+<p>The -p option identifies a package for the generated classes, and the -d option identifies a target directory. So for this command, the classes are packaged in test.jaxb within the work directory.</p>
+<pre><code>xjc.sh -p test.jaxb books.xsd -d work
+</code></pre>
+<p>The binding compiler generates a set of interfaces and a set of classes that implement the interfaces.</p>
+<h2 id="using-name-prefixes">Using Name Prefixes</h2>
+<p>https://www.w3schools.com/xml/xml_namespaces.asp</p>
+<h2 id="resources_2">Resources</h2>
+<p><a href="http://www.vogella.com/tutorials/JAXB/article.html">Vogella JAXB Tutorial</a></p>
+<p><a href="https://kodejava.org/how-to-generate-a-wrapper-element-around-xml-representation-in-jaxb/">In this example you’ll learn how to use the JAXB @XmlElementWrapper annotation.</a></p>
+<p><a href="https://www.javatips.net/api/javax.xml.bind.annotation.xmlelementwrapper">Java Examples for javax.xml.bind.annotation.XmlElementWrapper</a></p>
+<h2 id="serialization">Serialization</h2>
+<p>To <a href="https://docs.oracle.com/javase/tutorial/jndi/objects/serial.html">serialize</a> an object means to convert its state to a byte stream so that the byte stream can be reverted back into a copy of the object.</p>
+<p><a href="https://learn.sparkfun.com/tutorials/serial-communication/all">Sparkfun Serial Communication</a></p>
+<p><a href="https://www.geeksforgeeks.org/serialization-in-java/">Serialization in Java</a></p>
+<h2 id="validation">Validation</h2>
+<p><a href="http://blog.bdoughan.com/2010/11/validate-jaxb-object-model-with-xml.html">How to validate a JAXB object model against an XML schema</a></p>
+<p><a href="https://www.tutorialspoint.com/xsd/xsd_validation.htm">tutorialspoint XSD Validation</a></p>
+<p><a href="https://stackoverflow.com/questions/11463231/how-to-generate-jaxb-classes-from-xsd">How to generate JAXB classes from xsd</a></p>
+<p><a href="https://memorynotfound.com/generate-java-classes-from-xsd/">Generate Java Classes From XSD</a></p>
+<p><a href="https://docs.oracle.com/javaee/6/tutorial/doc/gkknj.html">Product tutorial</a></p>
+<p>https://howtodoinjava.com/jaxb/marshaller-example/</p>
+<p>https://stackoverflow.com/questions/8177377/dynamic-jaxb-xml-deserialization-unmarshalling</p>
+<p>https://stackoverflow.com/questions/15820779/writing-from-java-to-an-xml-document-simple</p>
+<p>https://docs.oracle.com/javase/7/docs/api/javax/xml/bind/Marshaller.html</p>
+<p>https://stackoverflow.com/questions/11463231/how-to-generate-jaxb-classes-from-xsd</p>
+<p>https://docs.oracle.com/javase/7/docs/api/javax/xml/bind/Unmarshaller.html</p>
+<p>https://docs.oracle.com/javaee/7/api/javax/xml/bind/Unmarshaller.html</p>
+<p>https://springframework.guru/using-jaxb-for-xml-with-java/</p>
+<p>https://www.ibm.com/support/knowledgecenter/en/SS7JFU_8.5.5/com.ibm.websphere.express.doc/ae/twbs_jaxbmarshalxml.html</p>
+<p>Lucene</p>
+<h2 id="basics">Basics</h2>
+<p>Lucene is a full-text search Java API. Use it to easily add search functionality to an application or website.</p>
+<h3 id="index">Index</h3>
+<p>Lucene <em>adds</em> content to a full-text <strong>index</strong>. Sources of content include SQL/NoSQL databases, filesystems, or even websites.</p>
+<h3 id="search">Search</h3>
+<p>Lucene allows you to <em>query</em> this <strong>index</strong> and returns results.</p>
+<p>Results are ranked by either the relevance to the query or sorted by an arbitrary field such as a document's last modified date.</p>
+<h2 id="versions">Versions</h2>
+<h2 id="examples">Examples</h2>
+<p>org.apache.lucene.search.IndexSearcher  // Lucene 3.4.0</p>
+<p>org.apache.lucene.store.IndexSearcher   // TrackDB project (unknown Lucene version)</p>
+<h2 id="resources_3">Resources</h2>
+<p><a href="https://lucene.apache.org/core/3_4_0/api/all/index.html">Lucene 3.4.0 API</a></p>
+<p>TrackDB from old Elias/Bruce repo that demos Lucene.</p>
+<p>store.IndexSearcher class not available in Lucene 3.4.0.</p>
+<h4 id="jax-ws">JAX WS</h4>
+<p>Java API for web services (SOAP).</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../virtual-env/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Virtual Environment
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../data/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Index
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

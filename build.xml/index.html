@@ -1,0 +1,1940 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.6">
+    
+    
+      
+        <title>Build.xml - My Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6910b76c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.196e0c26.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="My Notes" class="md-header-nav__button md-logo" aria-label="My Notes">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            My Notes
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Build.xml
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="My Notes" class="md-nav__button md-logo" aria-label="My Notes">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    My Notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Dev Notes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ant/" class="md-nav__link">
+      Ant
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../atom/" class="md-nav__link">
+      Atom Best Practices
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../bitbucket-sop/" class="md-nav__link">
+      Bitbucket sop
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Build.xml
+    </a>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../cs-basics/" class="md-nav__link">
+      CS Basics
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../curl/" class="md-nav__link">
+      Curl
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../design-patterns/" class="md-nav__link">
+      Web Design Patterns
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../django/" class="md-nav__link">
+      Django
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../docker/" class="md-nav__link">
+      Docker
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../git-crib-sheet/" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../gitlab-sop/" class="md-nav__link">
+      GitLab Standard Operating Procedures
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../gradle/" class="md-nav__link">
+      Gradle
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../hg-crib-sheet/" class="md-nav__link">
+      Mercurial Crib Sheet
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../intellij/" class="md-nav__link">
+      IntelliJ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../latex/" class="md-nav__link">
+      Latex
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../mysys2/" class="md-nav__link">
+      Mysys2
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../npm-yarn/" class="md-nav__link">
+      npm and Yarn
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../package-management/" class="md-nav__link">
+      Package Management
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ruby-rails/" class="md-nav__link">
+      Rails
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../scripts/" class="md-nav__link">
+      Scripts
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../scrum/" class="md-nav__link">
+      Scrum
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../time-management/" class="md-nav__link">
+      Time management
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../tomcat/" class="md-nav__link">
+      Tomcat
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../user-stories/" class="md-nav__link">
+      User Stories
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../vcs/" class="md-nav__link">
+      Version Control Systems (VCS)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../virtual-env/" class="md-nav__link">
+      Virtual Environment
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../web-services/" class="md-nav__link">
+      Web Services
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-29" type="checkbox" id="nav-29" >
+    <label class="md-nav__link" for="nav-29">
+      Data
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Data" data-md-level="1">
+      <label class="md-nav__title" for="nav-29">
+        <span class="md-nav__icon md-icon"></span>
+        Data
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../data/" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../data/geojson/" class="md-nav__link">
+      GeoJSON
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../data/json/" class="md-nav__link">
+      JSON
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../data/xml/" class="md-nav__link">
+      XML
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-30" type="checkbox" id="nav-30" >
+    <label class="md-nav__link" for="nav-30">
+      Dev ops
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Dev ops" data-md-level="1">
+      <label class="md-nav__title" for="nav-30">
+        <span class="md-nav__icon md-icon"></span>
+        Dev ops
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-30-1" type="checkbox" id="nav-30-1" >
+    <label class="md-nav__link" for="nav-30-1">
+      New horizons course
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="New horizons course" data-md-level="2">
+      <label class="md-nav__title" for="nav-30-1">
+        <span class="md-nav__icon md-icon"></span>
+        New horizons course
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/" class="md-nav__link">
+      New Horizons Course: DevOps Continuous Delivery Architect (CDA)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/1-concepts/" class="md-nav__link">
+      Module 1: Continuous Delivery Concepts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/2-culture/" class="md-nav__link">
+      Module 2: Collaborative Culture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/3-design/" class="md-nav__link">
+      Module 3: Design Practices for CD
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/4-ci-testing/" class="md-nav__link">
+      Module 4: Continuous Integration and Testing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/5-security/" class="md-nav__link">
+      Module 5: Security Assurance
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/6-cd/" class="md-nav__link">
+      Module 6: Continuous Deployment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/7-toolchain/" class="md-nav__link">
+      Module 7: Infrastructure and the DevOps Toolchain
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dev-ops/new-horizons-course/8-monitoring/" class="md-nav__link">
+      Module 8: Continuous Monitoring Measurement and Improvement
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-31" type="checkbox" id="nav-31" >
+    <label class="md-nav__link" for="nav-31">
+      Java
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Java" data-md-level="1">
+      <label class="md-nav__title" for="nav-31">
+        <span class="md-nav__icon md-icon"></span>
+        Java
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/" class="md-nav__link">
+      java-notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/how-to-deploy-war/" class="md-nav__link">
+      7442 Deploy War SOP
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/intellij/" class="md-nav__link">
+      IntelliJ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/java/" class="md-nav__link">
+      Java
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/javafx/" class="md-nav__link">
+      JavaFX
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/jaxb/" class="md-nav__link">
+      Jaxb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/lucene/" class="md-nav__link">
+      LUCENE
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/make-a-servlet/" class="md-nav__link">
+      Make a Servlet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/tomcat/" class="md-nav__link">
+      Tomcat
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/velocity/" class="md-nav__link">
+      Velocity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../java/xjc/" class="md-nav__link">
+      Xjc
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-32" type="checkbox" id="nav-32" >
+    <label class="md-nav__link" for="nav-32">
+      Js
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Js" data-md-level="1">
+      <label class="md-nav__title" for="nav-32">
+        <span class="md-nav__icon md-icon"></span>
+        Js
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/" class="md-nav__link">
+      js-notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/ajax/" class="md-nav__link">
+      Ajax
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/flux/" class="md-nav__link">
+      Flux
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/gatsby/" class="md-nav__link">
+      Gatsby
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/html/" class="md-nav__link">
+      Html
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/javascript/" class="md-nav__link">
+      JavaScript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/jquery/" class="md-nav__link">
+      jQuery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/js/" class="md-nav__link">
+      JavaScript
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/openlayers/" class="md-nav__link">
+      Openlayers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/react/" class="md-nav__link">
+      React
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../js/wkt/" class="md-nav__link">
+      WKT
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-33" type="checkbox" id="nav-33" >
+    <label class="md-nav__link" for="nav-33">
+      Latex
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Latex" data-md-level="1">
+      <label class="md-nav__title" for="nav-33">
+        <span class="md-nav__icon md-icon"></span>
+        Latex
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../latex/" class="md-nav__link">
+      LaTeX
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-34" type="checkbox" id="nav-34" >
+    <label class="md-nav__link" for="nav-34">
+      Python
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Python" data-md-level="1">
+      <label class="md-nav__title" for="nav-34">
+        <span class="md-nav__icon md-icon"></span>
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/" class="md-nav__link">
+      Python
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/conda/" class="md-nav__link">
+      Conda
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/panel/" class="md-nav__link">
+      Holoviz Panel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-34-4" type="checkbox" id="nav-34-4" >
+    <label class="md-nav__link" for="nav-34-4">
+      New horizons course
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="New horizons course" data-md-level="2">
+      <label class="md-nav__title" for="nav-34-4">
+        <span class="md-nav__icon md-icon"></span>
+        New horizons course
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/new-horizons-course/" class="md-nav__link">
+      python-course
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/new-horizons-course/notes/" class="md-nav__link">
+      Python with Data Science
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-35" type="checkbox" id="nav-35" >
+    <label class="md-nav__link" for="nav-35">
+      Rest
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Rest" data-md-level="1">
+      <label class="md-nav__title" for="nav-35">
+        <span class="md-nav__icon md-icon"></span>
+        Rest
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rest/api/" class="md-nav__link">
+      APIs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rest/rest/" class="md-nav__link">
+      REST API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-36" type="checkbox" id="nav-36" >
+    <label class="md-nav__link" for="nav-36">
+      Sys prog
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Sys prog" data-md-level="1">
+      <label class="md-nav__title" for="nav-36">
+        <span class="md-nav__icon md-icon"></span>
+        Sys prog
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sys-prog/" class="md-nav__link">
+      Systems Programming
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sys-prog/linux-commands/" class="md-nav__link">
+      Linux Commands
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-37" type="checkbox" id="nav-37" >
+    <label class="md-nav__link" for="nav-37">
+      Vim
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Vim" data-md-level="1">
+      <label class="md-nav__title" for="nav-37">
+        <span class="md-nav__icon md-icon"></span>
+        Vim
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vim/" class="md-nav__link">
+      My Vim Cheatsheet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vim/note-taking-with-vim/" class="md-nav__link">
+      Notetaking with Vim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vim/vim-crib-sheet/" class="md-nav__link">
+      Vim Crib Sheet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-37-4" type="checkbox" id="nav-37-4" >
+    <label class="md-nav__link" for="nav-37-4">
+      Vimwiki starter
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Vimwiki starter" data-md-level="2">
+      <label class="md-nav__title" for="nav-37-4">
+        <span class="md-nav__icon md-icon"></span>
+        Vimwiki starter
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../vim/vimwiki-starter/" class="md-nav__link">
+      My Knowledge Base
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Build.xml</h1>
+                
+                <!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+      https://tomcat.apache.org/tomcat-7.0-doc/appdev/build.xml.txt
+-->
+
+<!--
+     General purpose build script for web applications and web services,
+     including enhanced support for deploying directly to a Tomcat
+     based server.
+
+     This build script assumes that the source code of your web application
+     is organized into the following subdirectories underneath the source
+     code directory from which you execute the build script:
+
+        docs                 Static documentation files to be copied to
+                             the "docs" subdirectory of your distribution.
+
+        src                  Java source code (and associated resource files)
+                             to be compiled to the "WEB-INF/classes"
+                             subdirectory of your web application.
+
+        web                  Static HTML, JSP, and other content (such as
+                             image files), including the WEB-INF subdirectory
+                             and its configuration file contents.
+-->
+
+<!-- A "project" describes a set of targets that may be requested
+     when Ant is executed.  The "default" attribute defines the
+     target which is executed if no specific target is requested,
+     and the "basedir" attribute defines the current working directory
+     from which Ant executes the requested task.  This is normally
+     set to the current working directory.
+-->
+
+<p><project name="My Project" default="compile" basedir="."></p>
+<!-- ===================== Property Definitions =========================== -->
+
+<!--
+
+  Each of the following properties are used in the build script.
+  Values for these properties are set by the first place they are
+  defined, from the following list:
+
+  * Definitions on the "ant" command line (ant -Dfoo=bar compile).
+
+  * Definitions from a "build.properties" file in the top level
+    source directory of this application.
+
+  * Definitions from a "build.properties" file in the developer's
+    home directory.
+
+  * Default definitions in this build.xml file.
+
+  You will note below that property values can be composed based on the
+  contents of previously defined properties.  This is a powerful technique
+  that helps you minimize the number of changes required when your development
+  environment is modified.  Note that property composition is allowed within
+  "build.properties" files as well as in the "build.xml" script.
+
+-->
+
+<p><property file="build.properties"/>
+  <property file="${user.home}/build.properties"/></p>
+<!-- ==================== File and Directory Names ======================== -->
+
+<!--
+
+  These properties generally define file and directory names (or paths) that
+  affect where the build process stores its outputs.
+
+  app.name             Base name of this application, used to
+                       construct filenames and directories.
+                       Defaults to "myapp".
+
+  app.path             Context path to which this application should be
+                       deployed (defaults to "/" plus the value of the
+                       "app.name" property).
+
+  app.version          Version number of this iteration of the application.
+
+  build.home           The directory into which the "prepare" and
+                       "compile" targets will generate their output.
+                       Defaults to "build".
+
+  catalina.home        The directory in which you have installed
+                       a binary distribution of Tomcat.  This will
+                       be used by the "deploy" target.
+
+  dist.home            The name of the base directory in which
+                       distribution files are created.
+                       Defaults to "dist".
+
+  manager.password     The login password of a user that is assigned the
+                       "manager-script" role (so that he or she can execute
+                       commands via the "/manager" web application)
+
+  manager.url          The URL of the "/manager" web application on the
+                       Tomcat installation to which we will deploy web
+                       applications and web services.
+
+  manager.username     The login username of a user that is assigned the
+                       "manager-script" role (so that he or she can execute
+                       commands via the "/manager" web application)
+
+-->
+
+<p><property name="app.name"      value="myapp"/>
+  <property name="app.path"      value="/${app.name}"/>
+  <property name="app.version"   value="0.1-dev"/>
+  <property name="build.home"    value="${basedir}/build"/>
+  <property name="catalina.home" value="../../../.."/> <!-- UPDATE THIS! -->
+  <property name="dist.home"     value="${basedir}/dist"/>
+  <property name="docs.home"     value="${basedir}/docs"/>
+  <property name="manager.url"   value="http://localhost:8080/manager/text"/>
+  <property name="src.home"      value="${basedir}/src"/>
+  <property name="web.home"      value="${basedir}/web"/></p>
+<!-- ==================== External Dependencies =========================== -->
+
+<!--
+
+  Use property values to define the locations of external JAR files on which
+  your application will depend.  In general, these values will be used for
+  two purposes:
+  * Inclusion on the classpath that is passed to the Javac compiler
+  * Being copied into the "/WEB-INF/lib" directory during execution
+    of the "deploy" target.
+
+  Because we will automatically include all of the Java classes that Tomcat
+  exposes to web applications, we will not need to explicitly list any of those
+  dependencies.  You only need to worry about external dependencies for JAR
+  files that you are going to include inside your "/WEB-INF/lib" directory.
+
+-->
+
+<!-- Dummy external dependency -->
+<!--
+  <property name="foo.jar"
+           value="/path/to/foo.jar"/>
+-->
+
+<!-- ==================== Compilation Classpath =========================== -->
+
+<!--
+
+  Rather than relying on the CLASSPATH environment variable, Ant includes
+  features that makes it easy to dynamically construct the classpath you
+  need for each compilation.  The example below constructs the compile
+  classpath to include the servlet.jar file, as well as the other components
+  that Tomcat makes available to web applications automatically, plus anything
+  that you explicitly added.
+
+-->
+
+<p><path id="compile.classpath"></p>
+<pre><code>&lt;!-- Include all JAR files that will be included in /WEB-INF/lib --&gt;
+&lt;!-- *** CUSTOMIZE HERE AS REQUIRED BY YOUR APPLICATION *** --&gt;
+</code></pre>
+<!--
+    <pathelement location="${foo.jar}"/>
+-->
+
+<pre><code>&lt;!-- Include all elements that Tomcat exposes to applications --&gt;
+&lt;fileset dir="${catalina.home}/bin"&gt;
+  &lt;include name="*.jar"/&gt;
+&lt;/fileset&gt;
+&lt;pathelement location="${catalina.home}/lib"/&gt;
+&lt;fileset dir="${catalina.home}/lib"&gt;
+  &lt;include name="*.jar"/&gt;
+&lt;/fileset&gt;
+</code></pre>
+<p></path></p>
+<!-- ================== Custom Ant Task Definitions ======================= -->
+
+<!--
+
+  These properties define custom tasks for the Ant build tool that interact
+  with the "/manager" web application installed with Tomcat.  Before they
+  can be successfully utilized, you must perform the following steps:
+
+  - Copy the file "lib/catalina-ant.jar" from your Tomcat
+    installation into the "lib" directory of your Ant installation.
+
+  - Create a "build.properties" file in your application's top-level
+    source directory (or your user login home directory) that defines
+    appropriate values for the "manager.password", "manager.url", and
+    "manager.username" properties described above.
+
+  For more information about the Manager web application, and the functionality
+  of these tasks, see <http://localhost:8080/tomcat-docs/manager-howto.html>.
+
+-->
+
+<p><taskdef resource="org/apache/catalina/ant/catalina.tasks"
+           classpathref="compile.classpath"/></p>
+<!--  ==================== Compilation Control Options ==================== -->
+
+<!--
+
+  These properties control option settings on the Javac compiler when it
+  is invoked using the <javac> task.
+
+  compile.debug        Should compilation include the debug option?
+
+  compile.deprecation  Should compilation include the deprecation option?
+
+  compile.optimize     Should compilation include the optimize option?
+
+-->
+
+<p><property name="compile.debug"       value="true"/>
+  <property name="compile.deprecation" value="false"/>
+  <property name="compile.optimize"    value="true"/></p>
+<!-- ==================== All Target ====================================== -->
+
+<!--
+
+  The "all" target is a shortcut for running the "clean" target followed
+  by the "compile" target, to force a complete recompile.
+
+-->
+
+<p><target name="all" depends="clean,compile"
+   description="Clean build and dist directories, then compile"/></p>
+<!-- ==================== Clean Target ==================================== -->
+
+<!--
+
+  The "clean" target deletes any previous "build" and "dist" directory,
+  so that you can be ensured the application can be built from scratch.
+
+-->
+
+<p><target name="clean"
+   description="Delete old build and dist directories">
+    <delete dir="${build.home}"/>
+    <delete dir="${dist.home}"/>
+  </target></p>
+<!-- ==================== Compile Target ================================== -->
+
+<!--
+
+  The "compile" target transforms source files (from your "src" directory)
+  into object files in the appropriate location in the build directory.
+  This example assumes that you will be including your classes in an
+  unpacked directory hierarchy under "/WEB-INF/classes".
+
+-->
+
+<p><target name="compile" depends="prepare"
+   description="Compile Java sources"></p>
+<pre><code>&lt;!-- Compile Java classes as necessary --&gt;
+&lt;mkdir    dir="${build.home}/WEB-INF/classes"/&gt;
+&lt;javac srcdir="${src.home}"
+      destdir="${build.home}/WEB-INF/classes"
+        debug="${compile.debug}"
+  deprecation="${compile.deprecation}"
+     optimize="${compile.optimize}"&gt;
+    &lt;classpath refid="compile.classpath"/&gt;
+&lt;/javac&gt;
+
+&lt;!-- Copy application resources --&gt;
+&lt;copy  todir="${build.home}/WEB-INF/classes"&gt;
+  &lt;fileset dir="${src.home}" excludes="**/*.java"/&gt;
+&lt;/copy&gt;
+</code></pre>
+<p></target></p>
+<!-- ==================== Dist Target ===================================== -->
+
+<!--
+
+  The "dist" target creates a binary distribution of your application
+  in a directory structure ready to be archived in a tar.gz or zip file.
+  Note that this target depends on two others:
+
+  * "compile" so that the entire web application (including external
+    dependencies) will have been assembled
+
+  * "javadoc" so that the application Javadocs will have been created
+
+-->
+
+<p><target name="dist" depends="compile,javadoc"
+   description="Create binary distribution"></p>
+<pre><code>&lt;!-- Copy documentation subdirectories --&gt;
+&lt;mkdir   dir="${dist.home}/docs"/&gt;
+&lt;copy    todir="${dist.home}/docs"&gt;
+  &lt;fileset dir="${docs.home}"/&gt;
+&lt;/copy&gt;
+
+&lt;!-- Create application JAR file --&gt;
+&lt;jar jarfile="${dist.home}/${app.name}-${app.version}.war"
+     basedir="${build.home}"/&gt;
+
+&lt;!-- Copy additional files to ${dist.home} as necessary --&gt;
+</code></pre>
+<p></target></p>
+<!-- ==================== Install Target ================================== -->
+
+<!--
+
+  The "install" target tells the specified Tomcat installation to dynamically
+  install this web application and make it available for execution.  It does
+  *not* cause the existence of this web application to be remembered across
+  Tomcat restarts; if you restart the server, you will need to re-install all
+  this web application.
+
+  If you have already installed this application, and simply want Tomcat to
+  recognize that you have updated Java classes (or the web.xml file), use the
+  "reload" target instead.
+
+  NOTE:  This target will only succeed if it is run from the same server that
+  Tomcat is running on.
+
+  NOTE:  This is the logical opposite of the "remove" target.
+
+-->
+
+<p><target name="install" depends="compile"
+   description="Install application to servlet container"></p>
+<pre><code>&lt;deploy url="${manager.url}"
+   username="${manager.username}"
+   password="${manager.password}"
+       path="${app.path}"
+   localWar="file://${build.home}"/&gt;
+</code></pre>
+<p></target></p>
+<!-- ==================== Javadoc Target ================================== -->
+
+<!--
+
+  The "javadoc" target creates Javadoc API documentation for the Java
+  classes included in your application.  Normally, this is only required
+  when preparing a distribution release, but is available as a separate
+  target in case the developer wants to create Javadocs independently.
+
+-->
+
+<p><target name="javadoc" depends="compile"
+   description="Create Javadoc API documentation"></p>
+<pre><code>&lt;mkdir          dir="${dist.home}/docs/api"/&gt;
+&lt;javadoc sourcepath="${src.home}"
+            destdir="${dist.home}/docs/api"
+       packagenames="*"&gt;
+  &lt;classpath refid="compile.classpath"/&gt;
+&lt;/javadoc&gt;
+</code></pre>
+<p></target></p>
+<!-- ====================== List Target =================================== -->
+
+<!--
+
+  The "list" target asks the specified Tomcat installation to list the
+  currently running web applications, either loaded at startup time or
+  installed dynamically.  It is useful to determine whether or not the
+  application you are currently developing has been installed.
+
+-->
+
+<p><target name="list"
+   description="List installed applications on servlet container"></p>
+<pre><code>&lt;list    url="${manager.url}"
+    username="${manager.username}"
+    password="${manager.password}"/&gt;
+</code></pre>
+<p></target></p>
+<!-- ==================== Prepare Target ================================== -->
+
+<!--
+
+  The "prepare" target is used to create the "build" destination directory,
+  and copy the static contents of your web application to it.  If you need
+  to copy static files from external dependencies, you can customize the
+  contents of this task.
+
+  Normally, this task is executed indirectly when needed.
+
+-->
+
+<p><target name="prepare"></p>
+<pre><code>&lt;!-- Create build directories as needed --&gt;
+&lt;mkdir  dir="${build.home}"/&gt;
+&lt;mkdir  dir="${build.home}/WEB-INF"/&gt;
+&lt;mkdir  dir="${build.home}/WEB-INF/classes"/&gt;
+
+
+&lt;!-- Copy static content of this web application --&gt;
+&lt;copy todir="${build.home}"&gt;
+  &lt;fileset dir="${web.home}"/&gt;
+&lt;/copy&gt;
+
+&lt;!-- Copy external dependencies as required --&gt;
+&lt;!-- *** CUSTOMIZE HERE AS REQUIRED BY YOUR APPLICATION *** --&gt;
+&lt;mkdir  dir="${build.home}/WEB-INF/lib"/&gt;
+</code></pre>
+<!--
+    <copy todir="${build.home}/WEB-INF/lib" file="${foo.jar}"/>
+-->
+
+<pre><code>&lt;!-- Copy static files from external dependencies as needed --&gt;
+&lt;!-- *** CUSTOMIZE HERE AS REQUIRED BY YOUR APPLICATION *** --&gt;
+</code></pre>
+<p></target></p>
+<!-- ==================== Reload Target =================================== -->
+
+<!--
+
+  The "reload" signals the specified application Tomcat to shut itself down
+  and reload. This can be useful when the web application context is not
+  reloadable and you have updated classes or property files in the
+  /WEB-INF/classes directory or when you have added or updated jar files in the
+  /WEB-INF/lib directory.
+
+  NOTE: The /WEB-INF/web.xml web application configuration file is not reread
+  on a reload. If you have made changes to your web.xml file you must stop
+  then start the web application.
+
+-->
+
+<p><target name="reload" depends="compile"
+   description="Reload application on servlet container"></p>
+<pre><code>&lt;reload url="${manager.url}"
+   username="${manager.username}"
+   password="${manager.password}"
+       path="${app.path}"/&gt;
+</code></pre>
+<p></target></p>
+<!-- ==================== Remove Target =================================== -->
+
+<!--
+
+  The "remove" target tells the specified Tomcat installation to dynamically
+  remove this web application from service.
+
+  NOTE:  This is the logical opposite of the "install" target.
+
+-->
+
+<p><target name="remove"
+   description="Remove application on servlet container"></p>
+<pre><code>&lt;undeploy url="${manager.url}"
+     username="${manager.username}"
+     password="${manager.password}"
+         path="${app.path}"/&gt;
+</code></pre>
+<p></target></p>
+<p></project></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../bitbucket-sop/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Bitbucket sop
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../cs-basics/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                CS Basics
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.fd16492e.min.js"></script>
+      <script src="../assets/javascripts/bundle.7836ba4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
