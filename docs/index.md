@@ -1,6 +1,13 @@
 # Dev Notes
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+[GitHub Source](https://github.com/shylaclark/dev-notes)
+> Observations:
+> * Handwritten notes are good for jotting down ideas and reminders.
+> * My tech notes need to be searchable.
+> * In meetings, typing is much faster.
+
+## About
+This repository contains all of my notes related to software development.
 
 ## Notes
 
@@ -11,10 +18,12 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 * [Time Management](time-management.md)
 * [Virtual Environment](virtual-env.md)
 * [Django](django.md)
+* Languages
+  * [Java](java/)
+  * [JavaScript](js/)
+  * [Python](python/)
+* [Data](data/)
+* [DevOps](dev-ops/)
+* [Tools](tools/)
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Notes formatted with [MkDocs](https://www.mkdocs.org).

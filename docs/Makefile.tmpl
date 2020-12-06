@@ -1,0 +1,12 @@
+MD_FILES=index.md todo.md
+PDF_FILES=$(MD_FILES:.md=.pdf)
+BUILD_PDF_FILES=$(PDF_FILES:%=build/%)
+
+test.pdf: $(BUILD_PDF_FILES)
+        gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default \
+                -dNOPAUSE -dQUIET -dBATCH -dDetectDuplicateImages
+                -dCompressFonts=true -r150 -sOutputFile=$@ $^ $(EXTRA_PDFS)
+
+build/%.pdf: %.md
+        @mkdir -p $$(dirname $@)
+        pandoc -V geometry:margin=1in -o $@ $?

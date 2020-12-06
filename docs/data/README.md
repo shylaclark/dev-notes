@@ -1,0 +1,1 @@
+HTML is used to structure the text on web pages to be rendered appropriately in web browsers. XML is generally used to structure data or messages. JSON is used to represent data as key-value pairs, which can be easily converted to and from JavaScript objects.
