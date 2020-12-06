@@ -2,6 +2,7 @@
 
 [GitHub Source](https://github.com/shylaclark/dev-notes)
 > Observations:
+>
 > * Handwritten notes are good for jotting down ideas and reminders.
 > * My tech notes need to be searchable.
 > * In meetings, typing is much faster.
@@ -19,9 +20,9 @@ This repository contains all of my notes related to software development.
 * [Virtual Environment](virtual-env.md)
 * [Django](django.md)
 * Languages
-  * [Java](java/)
-  * [JavaScript](js/)
-  * [Python](python/)
+  - [Java](java/)
+  - [JavaScript](js/)
+  - [Python](python/)
 * [Data](data/)
 * [DevOps](dev-ops/)
 * [Tools](tools/)
