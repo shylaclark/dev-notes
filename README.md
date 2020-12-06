@@ -3,6 +3,10 @@
 Written in markdown and built using mkdocs.
 
 ## Getting Started
+1. Clone this repo into your `C:\User\<username>\Notes` directory.
+1. Use Atom to work with these notes.
+1. Activate new conda environment mkdocs
+1. Install mkdocs 
 
 ### Project layout
 
@@ -13,15 +17,18 @@ Written in markdown and built using mkdocs.
 
 ### Run
 
-Run locally: `mkdocs serve`
+Run on a live preview server: `mkdocs serve`
 
-Access your site: http://127.0.0.1:8001/
+To see your changes, point your browser to http://127.0.0.1:8001/.
 
 Deploy to GitHub pages: `mkdocs gh-deploy`
+
+Build a static site: `mkdocs build`
 
 
 ## Resources
 * [MkDocs docs](https://www.mkdocs.org/)
 * [MkDocs tutorial](https://romandc.com/techtalk-mkdocs/)
 * [Mkdocs themes](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes)
+  * [Customize the material theme](https://squidfunk.github.io/mkdocs-material/customization/)
 * [Markdown examples](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html)
