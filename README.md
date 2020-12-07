@@ -4,12 +4,9 @@ Written in markdown and built using mkdocs.
 
 ## Getting Started
 1. Clone project to `C:\User\<username>\Notes` directory.
-1. Create new conda environment:
-```
-conda create --name mkdocs
-conda activate mkdocs
-```
-1. `conda install -c conda-forge mkdocs`
+1. Create new conda environment: `conda create --name mkdocs`
+1. Activate it: `conda activate mkdocs`
+1. Install mkdocs: `conda install -c conda-forge mkdocs`
 
 ### Project layout
 
