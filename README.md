@@ -3,10 +3,13 @@
 Written in markdown and built using mkdocs.
 
 ## Getting Started
-1. Clone this repo into your `C:\User\<username>\Notes` directory.
-1. Use Atom to work with these notes.
-1. Activate new conda environment mkdocs
-1. Install mkdocs 
+1. Clone project to `C:\User\<username>\Notes` directory.
+1. Create new conda environment:
+```
+conda create --name mkdocs
+conda activate mkdocs
+```
+1. `conda install -c conda-forge mkdocs`
 
 ### Project layout
 
