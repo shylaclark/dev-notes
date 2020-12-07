@@ -9,6 +9,11 @@ Check out a remote branch
 git checkout <branch-name>
 ```
 
+Delete a local branch
+```
+git branch -d <local-branch>
+```
+
 Stash
 ```
 git stash
@@ -118,7 +123,6 @@ Date:   Fri Aug 1 22:57:55 2014 +0200
    them.
    ```
 Change a commit message [[source](https://docs.github.com/en/github/committing-changes-to-your-project/changing-a-commit-message)]
-```
 ```
 
 Undo last commit (but preserve changes)
