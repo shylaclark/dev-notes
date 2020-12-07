@@ -2,11 +2,11 @@
 
 Written in markdown and built using mkdocs.
 
+> Tips:
+> 1. Keep notes in a `C:\User\<username>\Notes` directory.
+> 1. Have a separate conda environment for notes `conda create --name notes`.
+
 ## Getting Started
-1. Clone project to `C:\User\<username>\Notes` directory.
-1. Create new conda environment: `conda create --name mkdocs`
-1. Activate it: `conda activate mkdocs`
-1. Install mkdocs: `conda install -c conda-forge mkdocs`
 
 ### Project layout
 
@@ -15,8 +15,13 @@ Written in markdown and built using mkdocs.
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
 
-### Run
+### Requirements
+mkdocs: `conda install -c conda-forge mkdocs`
 
+### Install
+`git clone git@github.com:shylaclark/dev-notes.git`
+
+### Run
 Run on a live preview server: `mkdocs serve`
 
 To see your changes, point your browser to http://127.0.0.1:8001/.
@@ -24,7 +29,6 @@ To see your changes, point your browser to http://127.0.0.1:8001/.
 Deploy to GitHub pages: `mkdocs gh-deploy`
 
 Build a static site: `mkdocs build`
-
 
 ## Resources
 * [MkDocs docs](https://www.mkdocs.org/)
