@@ -1,7 +1,7 @@
 # Conda
 
 ```
-conda update -n base -c defaults conda 
+conda update -n base -c defaults conda
 ```
 
 ```
@@ -10,10 +10,10 @@ conda install -c pyviz/label/dev panel=0.10.0a25
 
 ## Useful commands
 $ conda info
-![](static/conda-info.png)
+![](img/conda-info.png)
 
 $ conda env list
-￼![](static/conda-env-list.png)
+￼![](img/conda-env-list.png)
 
 Miniconda3 installer installs the library in /opt/ folder no matter what.
 

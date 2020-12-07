@@ -1,12 +1,16 @@
 site_name: Dev Notes
 dev_addr: '127.0.0.1:8001'
-
-# Install Material for MkDocs: pip install mkdocs-material
-# For more themes: https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes
-
 # theme:
 #   name: readthedocs
 # pages:
 #   - Home: 'README.md'
+
+# About Themes
+# The available installed themes are: mkdocs, readthedocs
+#
+# For more themes: https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes
+#
+# To install Material for MkDocs:
+# pip install mkdocs-material
 
 theme: material

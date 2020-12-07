@@ -49,6 +49,6 @@ To save and name
 Vundle isn't being maintained anymore. Use [vim-plug](https://github.com/junegunn/vim-plug) instead.
 
 ## Learn Vim
-- [VimGenius](vimgenius.com)
-- [Vim-Adventures](vim-adventures.com)
+- [VimGenius](https://vimgenius.com)
+- [Vim-Adventures](https://vim-adventures.com)
 - [5 Places to Learn Vim](https://www.freecodecamp.org/news/vim-isnt-that-scary-here-are-5-free-resources-you-can-use-to-learn-it-ab78f5726f8d/)
