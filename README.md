@@ -1,4 +1,6 @@
-# dev-notes
+# Dev Notes
+
+## About
 
 Written in markdown and built using mkdocs.
 
@@ -6,21 +8,19 @@ Written in markdown and built using mkdocs.
 > 1. Keep notes in a `C:\User\<username>\Notes` directory.
 > 1. Have a separate conda environment for notes `conda create --name notes`.
 
-## Getting Started
-
 ### Project layout
 
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+        ...       # Other markdown pages, images and other files.v
+
+## Quick Start
 
 ### Requirements
 
-`conda install -c conda-forge mkdocs`
-
-[Material for MkDocs](https://github.com/squidfunk/mkdocs-material)
-`pip install mkdocs-material`
+1. MkDocs:  `conda install -c conda-forge mkdocs`
+1. [Material for MkDocs](https://github.com/squidfunk/mkdocs-material): `pip install mkdocs-material`
 
 ### Install
 `git clone git@github.com:shylaclark/dev-notes.git`
