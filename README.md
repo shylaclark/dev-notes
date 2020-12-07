@@ -1,4 +1,4 @@
-# Dev Notes
+# dev-notes
 
 Written in markdown and built using mkdocs.
 
