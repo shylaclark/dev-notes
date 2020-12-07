@@ -16,7 +16,11 @@ Written in markdown and built using mkdocs.
         ...       # Other markdown pages, images and other files.
 
 ### Requirements
-mkdocs: `conda install -c conda-forge mkdocs`
+
+`conda install -c conda-forge mkdocs`
+
+[Material for MkDocs](https://github.com/squidfunk/mkdocs-material)
+`pip install mkdocs-material`
 
 ### Install
 `git clone git@github.com:shylaclark/dev-notes.git`
