@@ -130,3 +130,4 @@ pandoc -s -V geometry:margin=1in -o output-file.pdf  input-file.md
 - https://pandoc.org/MANUAL.html
 - [Ultimate guide to writing and publishing in markdown](https://blog.ghost.org/markdown/)
 - [Rippledoc generates HTML from markdown](http://www.unexpected-vortices.com/sw/rippledoc/index.html)
+- [Deploy multiple private wikis with Docker](https://www.reddit.com/r/docker/comments/fuyn3c/best_way_to_deploy_multiple_private_wikis_with/?utm_source=share&utm_medium=ios_app&utm_name=iossmf)
