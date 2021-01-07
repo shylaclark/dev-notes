@@ -11,3 +11,4 @@
   1. Choose PowerShell
 1. Install Notepad++
 1. [Install MiKTeX on Windows](https://miktex.org/download)
+1. [If using Mercurial, install posh-hg for PowerShell](https://github.com/JeremySkinner/posh-hg)
