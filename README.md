@@ -4,7 +4,7 @@
 
 Written in markdown and built using mkdocs.
 
-> #### Tips
+
 > On computer:
 > 1. Keep notes in a `C:\User\<username>\Notes` directory
 > 1. Have a separate conda environment for notes `conda create --name notes`
@@ -22,13 +22,15 @@ Written in markdown and built using mkdocs.
 
 ## Quick Start
 
-### Requirements
+### Install
 
-1. MkDocs:  `conda install -c conda-forge mkdocs`
+#### Install MkDocs
+1. `conda install -c conda-forge mkdocs`
 1. [Material for MkDocs](https://github.com/squidfunk/mkdocs-material): `pip install mkdocs-material`
 
-### Install
-`git clone git@github.com:shylaclark/dev-notes.git`
+#### Install Project
+1. `cd C:\User\<username>\Notes`
+1. `git clone git@github.com:shylaclark/dev-notes.git`
 
 ### Run
 Run on a live preview server: `mkdocs serve`
