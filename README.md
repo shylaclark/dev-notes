@@ -8,10 +8,10 @@
 
 ### Project layout
 
-    mkdocs.yml    # The configuration file.
+    mkdocs.yml    # Configuration file
     docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+        index.md  # Home page
+        ...       # Other markdown pages, images, and other files
 
 ## Quick Start for Desktop
 
