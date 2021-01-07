@@ -10,8 +10,8 @@
 1. Create two new directories in your home directory:
   ```
   Users/sclark/
-            /Notes
-            /Projects
+            Notes/
+            Projects/
   ```
 
 ## Notetaking
