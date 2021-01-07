@@ -14,7 +14,7 @@
               Projects/
     ```
 
-## Notetaking
+## Note-taking
 Atom is a sleek and clean IDE, just perfect for managing my notes.
 
 #### IDE: Atom
@@ -42,7 +42,7 @@ VSCode has built-in support for Jupyter Notebooks.
 > Note: Chrome was the only browser that reliably worked on the ERP project.
 
 #### Firefox
-Firefox doesn't work with CAC-enabled web sites, as far as I know.
+> Note: Firefox doesn't work with CAC-enabled web sites, as far as I know.
 
 * [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/68.0a2/firstrun/)
 * or regular Firefox with extensions:
