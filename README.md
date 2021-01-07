@@ -24,15 +24,31 @@ Written in markdown and built using mkdocs.
 
 ### Install
 
-#### Install Dependencies
-    conda install -c conda-forge mkdocs
-    pip install mkdocs-material
+#### Install dependencies
 
-#### Install Project
-    cd C:\User\<username>\
-    mkdir Notes
-    cd Notes
-    git clone git@github.com:shylaclark/dev-notes.git
+Install MkDocs
+```
+conda install -c conda-forge mkdocs
+```
+
+Install theme
+```
+pip install mkdocs-material
+```
+
+#### Install project
+
+Create a Notes folder
+```
+cd C:\User\<username>\
+mkdir Notes
+```
+
+Clone dev-notes
+```
+cd Notes
+git clone git@github.com:shylaclark/dev-notes.git
+```
 
 ### Run
 Run on a live preview server: `mkdocs serve`
