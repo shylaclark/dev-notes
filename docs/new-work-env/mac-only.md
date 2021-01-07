@@ -1,4 +1,4 @@
-# Extra Setup for Developing on Mac
+# Set Up Mac
 
 1. [Install MacTeX on Mac](https://tug.org/mactex/)
 1. Install Terminal Themes
