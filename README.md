@@ -4,24 +4,19 @@
 
 Written in markdown and built using mkdocs.
 
-
-> Tips:
-> 1. Keep notes in a `C:\User\<username>\Notes` directory
-> 1. Use a separate conda environment for notes
-
 ### Project layout
 
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.v
+        ...       # Other markdown pages, images and other files.
 
 ## Quick Start for Desktop
 
-### Create a new conda environment
-```
-conda create --name notes
-```
+> Tip:  Create a new conda environment
+> ```
+> conda create --name notes
+> ```
 
 ### Install dependencies
 
@@ -37,11 +32,11 @@ pip install mkdocs-material
 
 ### Install project
 
-Create a Notes folder
-```
-cd C:\User\<username>\
-mkdir Notes
-```
+> Tip:  Create a dedicated notes folder
+> ```
+> cd C:\User\<username>\
+> mkdir Notes
+> ```
 
 Clone dev-notes
 ```
