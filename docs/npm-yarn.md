@@ -4,9 +4,6 @@
 
 ### Getting Started
 
-
-
-
 package.json
 package-lock.json
 
@@ -31,4 +28,13 @@ $ rm -rf node_modules/
 $ npm install
 ```
 
-
+## yarn
+Install yarn
+```
+npm install yarn —global
+```
+Better than global install (requires MacOS)
+```
+brew install yarn
+```
+Brew is a native OS package manager.
