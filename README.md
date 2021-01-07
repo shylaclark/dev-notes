@@ -4,9 +4,14 @@
 
 Written in markdown and built using mkdocs.
 
-> Tips:
-> 1. Keep notes in a `C:\User\<username>\Notes` directory.
-> 1. Have a separate conda environment for notes `conda create --name notes`.
+> #### Tips
+> On computer:
+> 1. Keep notes in a `C:\User\<username>\Notes` directory
+> 1. Have a separate conda environment for notes `conda create --name notes`
+>
+> On iPhone:
+> 1. Download GitJournal app and add this repository
+
 
 ### Project layout
 
