@@ -22,9 +22,7 @@ Written in markdown and built using mkdocs.
 
 ## Quick Start
 
-### Install
-
-#### Install dependencies
+### Install dependencies
 
 Install MkDocs
 ```
@@ -36,7 +34,7 @@ Install theme
 pip install mkdocs-material
 ```
 
-#### Install project
+### Install project
 
 Create a Notes folder
 ```
@@ -51,13 +49,22 @@ git clone git@github.com:shylaclark/dev-notes.git
 ```
 
 ### Run
-Run on a live preview server: `mkdocs serve`
 
+#### Run locally on live preview server
+```
+mkdocs serve
+```
 To see your changes, point your browser to http://127.0.0.1:8001/.
 
-Deploy to GitHub pages: `mkdocs gh-deploy`
+#### Deploy to GitHub pages
+```
+mkdocs gh-deploy
+```
 
-Build a static site: `mkdocs build`
+#### Build a static site
+```
+mkdocs build
+```
 
 ## Resources
 * [MkDocs docs](https://www.mkdocs.org/)
