@@ -5,13 +5,9 @@
 Written in markdown and built using mkdocs.
 
 
-> On computer:
+> Tips:
 > 1. Keep notes in a `C:\User\<username>\Notes` directory
-> 1. Have a separate conda environment for notes `conda create --name notes`
->
-> On iPhone:
-> 1. Download GitJournal app and add this repository
-
+> 1. Use a separate conda environment for notes
 
 ### Project layout
 
@@ -21,6 +17,11 @@ Written in markdown and built using mkdocs.
         ...       # Other markdown pages, images and other files.v
 
 ## Quick Start for Desktop
+
+### Create a new conda environment
+```
+conda create --name notes
+```
 
 ### Install dependencies
 
