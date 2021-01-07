@@ -8,14 +8,14 @@
     ```
     If not, install [git](https://git-scm.com/downloads)
 1. Create two new directories in your home directory:
-  ```
-  Users/sclark/
-            Notes/
-            Projects/
-  ```
+    ```
+    Users/sclark/
+              Notes/
+              Projects/
+    ```
 
 ## Notetaking
-Atom is a sleek, clean IDE, just perfect for managing my notes.
+Atom is a sleek and clean IDE, just perfect for managing my notes.
 
 #### IDE: Atom
 1. [Install Atom](https://atom.io)
@@ -28,11 +28,11 @@ Atom is a sleek, clean IDE, just perfect for managing my notes.
 
 ## Development
 
-#### IDE: VS Code
-VS Code has built-in support for Jupyter Notebooks.
+#### IDE: VSCode
+VSCode has built-in support for Jupyter Notebooks.
 
-1. Install [VS Code](https://code.visualstudio.com/)
-1. [Configure VS Code](set-up-vscode.md)
+1. Install [VSCode](https://code.visualstudio.com/)
+1. [Configure VSCode](set-up-vscode.md)
 
 #### For React
 1. Install Node (npm, node, npx)
