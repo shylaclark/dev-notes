@@ -6,7 +6,7 @@
 * Publically available at https://shylaclark.github.io/dev-notes/.
 * Written in markdown and built using mkdocs.
 
-### Project layout
+#### Project layout
 
     mkdocs.yml    # Configuration file
     docs/
