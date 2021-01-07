@@ -20,7 +20,7 @@ Written in markdown and built using mkdocs.
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.v
 
-## Quick Start
+## Quick Start for Desktop
 
 ### Install dependencies
 
@@ -65,6 +65,13 @@ mkdocs gh-deploy
 ```
 mkdocs build
 ```
+
+## Quick Start for Mobile
+1. Download GitJournal app
+1. In app, click 'Setup manually'
+1. Create new SSH key for mobile device
+1. In GitHub, add new SSH key account
+1. In app, click 'Clone repository'
 
 ## Resources
 * [MkDocs docs](https://www.mkdocs.org/)
