@@ -2,7 +2,7 @@
 
 ## About
 
-* Contains my work notes.
+* Contains my software engineering notes.
 * Publically available at https://shylaclark.github.io/dev-notes/.
 * Written in markdown and built using mkdocs.
 
