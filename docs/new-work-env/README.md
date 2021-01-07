@@ -6,7 +6,7 @@
   ```
   git --version
   ```
-  If not, install [git](https://git-scm.com/downloads)
+  > If not, install [git](https://git-scm.com/downloads)
 1. Create two new directories in your home directory:
   ```
   Users/sclark/
