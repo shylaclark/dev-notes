@@ -24,13 +24,15 @@ Written in markdown and built using mkdocs.
 
 ### Install
 
-#### Install MkDocs
-1. `conda install -c conda-forge mkdocs`
-1. [Material for MkDocs](https://github.com/squidfunk/mkdocs-material): `pip install mkdocs-material`
+#### Install Dependencies
+    conda install -c conda-forge mkdocs
+    pip install mkdocs-material
 
 #### Install Project
-1. `cd C:\User\<username>\Notes`
-1. `git clone git@github.com:shylaclark/dev-notes.git`
+    cd C:\User\<username>\
+    mkdir Notes
+    cd Notes
+    git clone git@github.com:shylaclark/dev-notes.git
 
 ### Run
 Run on a live preview server: `mkdocs serve`
@@ -45,5 +47,6 @@ Build a static site: `mkdocs build`
 * [MkDocs docs](https://www.mkdocs.org/)
 * [MkDocs tutorial](https://romandc.com/techtalk-mkdocs/)
 * [Mkdocs themes](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes)
+  * [Material for MkDocs](https://github.com/squidfunk/mkdocs-material)
   * [Customize the material theme](https://squidfunk.github.io/mkdocs-material/customization/)
 * [Markdown examples](http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html)
