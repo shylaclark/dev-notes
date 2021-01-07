@@ -1,35 +1,37 @@
-Time Management
-===============
+---
+modified: 2021-01-07T11:35:54-06:00
+---
 
-Parkinson's Law
+# Time Management
+
+#### Parkinson's Law
 Work expands so as to fill the time available for its completion.
 
-Student's Syndrome
+#### Student's Syndrome
 A tendency to delay starting an assignment until it is almost too late to get it done on time.
 
-Murphy's Law
+#### Murphy's Law
 If something can go wrong, it will.
 
-Backend Load
-------------
+## Backend Load
+
 Little work on the task in the early part of assigned time followed by colossal effort in the last minute.
 
 Negative outcomes:
-	Overshooting the deadline
-	Insufficient solution
-	Low-quality solution
+1. Overshooting the deadline
+1. Insufficient solution
+1. Low-quality solution
 
-Uniform Load
-------------
+## Uniform Load
+
 Completing equal parts of the task in equal intervals of time.
 
 Potential problems:
-	Accuracy of estimate
- 	Measure of progress
- 	No protection from Murphy
+1. Accuracy of estimate
+1.	Measure of progress
+1. No protection from Murphy
 
-Frontend Load
--------------
+## Frontend Load
 
 Doing as much of the task as possible right up front.
 
