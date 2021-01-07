@@ -2,7 +2,9 @@
 
 ## About
 
-Written in markdown and built using mkdocs.
+* Contains my work notes.
+* Publically available at https://shylaclark.github.io/dev-notes/.
+* Written in markdown and built using mkdocs.
 
 ### Project layout
 
