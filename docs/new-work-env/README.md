@@ -3,7 +3,8 @@
 ## Getting Started
 1. If using Windows, start [here](windows-only.md)
 1. Make sure you have git
-  ```git --version
+  ```
+  git --version
   ```
   If not, install [git](https://git-scm.com/downloads)
 1. Create two new directories in your home directory:
