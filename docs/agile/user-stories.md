@@ -13,16 +13,21 @@
 Geocent and NRL follow this format.
 
 <u>Value Statement</u>  
-As a \<who>, I want \<what>, so that \<why>.
+```
+As a <who>, I want <what>, so that <why>.
+```
 
 <u>Acceptance Criteria</u>  
-AC 1:  Given \<starting condition>, when \<action occurs>, then \<expected result>.  
-AC 2:  Given \<starting condition>, when \<action occurs>, then \<expected result>.
+```
+AC 1:  Given <starting condition>, when <action occurs>, then <expected result>.  
+AC 2:  Given <starting condition>, when <action occurs>, then <expected result>.
+```
 
 #### Example
 
 <u>Value Statement:</u>  
  As a user, I want to be able to replace the collective value in the helios XML with a variable, so that I can generate a set of experiments with my specified collective values.
+
 
 <u>Testing Requirements:</u>  
 1. Select tests/test_inputs/s76_mstrand9.1.xml
