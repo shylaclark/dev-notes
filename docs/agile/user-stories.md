@@ -9,7 +9,7 @@
 * It is good practice to write the ‘Who’ statement in the stories from the perspective of an any person or group who will interact with the features being created. 
 * Acceptance criteria is normally a list of questions, scenarios or examples that enable the customer to sign off the story as ‘done’.
 
-## Format
+#### Format
 Geocent and NRL follow this format.
 
 <u>Value Statement</u>  
@@ -19,7 +19,7 @@ As a \<who>, I want \<what>, so that \<why>.
 AC 1:  Given \<starting condition>, when \<action occurs>, then \<expected result>.  
 AC 2:  Given \<starting condition>, when \<action occurs>, then \<expected result>.
 
-## Example
+#### Example
 
 <u>Value Statement:</u>  
  As a user, I want to be able to replace the collective value in the helios XML with a variable, so that I can generate a set of experiments with my specified collective values.
