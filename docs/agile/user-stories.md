@@ -1,19 +1,16 @@
 # User Stories
 
 ## How to write a user story
-A good user story is independent, negotiable, valuable, estimable, small, testable.
+* A good user story is independent, negotiable, valuable, estimable, small, testable.
+* The value statement (a.k.a. summary) should include:
+  * WHO wants a feature.
+  * WHAT feature they want.
+  * WHY they want the feature. This may be tied into a business case if one exists.
+* It is good practice to write the ‘Who’ statement in the stories from the perspective of an any person or group who will interact with the features being created. 
+* Acceptance criteria is normally a list of questions, scenarios or examples that enable the customer to sign off the story as ‘done’.
 
-The value statement (a.k.a. summary) should include:
-* WHO wants a feature.
-* WHAT feature they want.
-* WHY they want the feature. This may be tied into a business case if one exists.
-
-It is good practice to write the ‘Who’ statement in the stories from the perspective of an any person or group who will interact with the features being created. 
-
-Acceptance criteria is normally a list of questions, scenarios or examples that enable the customer to sign off the story as ‘done’.
-
-### User story format
-> Note: Geocent and NRL follow this format.
+## Format
+Geocent and NRL follow this format.
 
 <u>Value Statement</u>  
 As a \<who>, I want \<what>, so that \<why>.
@@ -22,7 +19,8 @@ As a \<who>, I want \<what>, so that \<why>.
 AC 1:  Given \<starting condition>, when \<action occurs>, then \<expected result>.  
 AC 2:  Given \<starting condition>, when \<action occurs>, then \<expected result>.
 
-### Example user story
+## Example
+
 <u>Value Statement:</u>  
  As a user, I want to be able to replace the collective value in the helios XML with a variable, so that I can generate a set of experiments with my specified collective values.
 
@@ -40,35 +38,24 @@ AC 2: When the warning appears that there is no where to substitute collective, 
 * Compound transform with x-axis to apply collective to.
 * If first blade doesn't have compound transform, then warn user --> ERP-513.
 
-<u>Questions:</u>
-| Questions   | Answers     |
-|-------------|-------------|
+<u>Questions:</u>  
+| Questions   | Answers     |  
+|-------------|-------------|  
 |  What axis should the collective angle be applied to?	| x-axis (usually) good for v1.1   |
-
-#### Example bug story [[source]](http://www.payton-consulting.com/how-to-write-user-stories-for-bugs/)
-
-<u>Value Statement:</u>  
-As a user, I want to be able to adjust the bounds sliders without a long delay before the table updates.
- 
-<u>Steps to Reproduce:</u>  
-1. Select tests/test_inputs/s76-robin9.1.xml
-1. Input values for gross weight, blade chord, and flat plate area
-1. After the table loads with calculated values, move either of the bounds sliders
-
-<u>Acceptance Criteria:</u>  
-AC 1: When a slider is adjusted, there shouldn't be a long delay before the table updates.
 
 ## Story Pointing
 Points are based on a modified Fibonacci sequence: 1, 2, 3, 5, 8, 13, 20
 
-## Notes from NRL
+## NRL Notes
 
-#### Ben tips
-It's supposed to be the product owner (Bruce) who writes the stories, and the developers are supposed to ask questions to verify they understand; however, in practice, Ben and Bruce just sort of know what needs to be done, and have a hard time putting it into "story form."  
-Talk to Brittney. She wrote great stories for EPMA project. Dakota would also like to be there if she provides training on this.
+Ben tips:  
+* It's supposed to be the product owner (Bruce) who writes the stories, and the developers are supposed to ask questions to verify they understand; however, in practice, Ben and Bruce just sort of know what needs to be done, and have a hard time putting it into "story form."  
+* Talk to Brittney. She wrote great stories for EPMA project. Dakota would also like to be there if she provides training on this.
 
-#### D9K pointing
+D9K pointing:
 * D9K says an "8" is one person, one sprint.
 * 1 pt = 6 hrs = .60 x one 10-hr day  
 * 4 pts per week
 * Sprints are two weeks, so 4 story points per week.
+
+## Resources
