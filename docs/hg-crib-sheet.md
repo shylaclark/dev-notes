@@ -1,1 +1,0 @@
-# Mercurial Crib Sheet

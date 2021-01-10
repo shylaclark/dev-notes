@@ -11,5 +11,3 @@ https://code.visualstudio.com/docs/python/python-tutorial
 * GitHub Pull Requests and Issues
 
 ## For Java
-
-### Best extensions

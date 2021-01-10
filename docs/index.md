@@ -11,7 +11,7 @@
 This repository contains all of my notes related to software development.
 
 ## Notes
-
+* [New work environment](new-work-env/)
 * [Atom](atom.md)
 * [CS Basics](cs-basics.md)
 * [Scrum](scrum.md)
