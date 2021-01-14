@@ -1,6 +1,5 @@
 # LaTeX
 
-https://tex.stackexchange.com/questions/107599/what-is-miktex	// This has links to several useful resources.
 
 TeX is a computer program for typesetting documents, created by D. E. Knuth. 
 
@@ -30,3 +29,6 @@ Read the Docs
 OverLeaf
 pandoc
 MikTex
+
+## Resources
+- [What is MikTeX](https://tex.stackexchange.com/questions/107599/what-is-miktex)	// This has links to several useful resources.
