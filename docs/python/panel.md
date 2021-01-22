@@ -30,4 +30,13 @@
             return pn.Column(self.checkboxgroup_widget)
 ```
 
+
+
+#### alert
+```
+   pn.pane.Alert(
+       'This XML file does not contain any rotor frames.',
+       alert_type="danger"
+   )
+```
 ## Resources
