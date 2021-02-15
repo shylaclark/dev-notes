@@ -3,3 +3,4 @@
 ## About
 - Dates: Feb 15-19, 2021
 - Instructor: Vinay Belagavi, vbelagav@redhat.com
+- [Student Workbook](do285-4.5-student-guide.pdf)
