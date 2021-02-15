@@ -1,4 +1,4 @@
-# Unit 1
+# Chapter 1
 - Containers are to make things easier for developers.
   - Much lighter weight than virtual machines.
   - Don't need to wait for an administrator to provide the environment.
