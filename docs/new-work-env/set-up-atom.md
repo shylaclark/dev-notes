@@ -2,8 +2,13 @@
 
 ## Install Atom and apm
 
-1. Install Atom
-1. Verify you have apm installed: `apm help install`
+#### Install Atom
+https://atom.io/
+
+#### Verify you have apm installed
+```
+apm help install
+```
 
     > #### Troubleshooting
     >
@@ -14,8 +19,10 @@
     > For example, on Windows you should see this in your user environment variables list:  `C:\Users\username\AppData\Local\atom\bin`
     >
     > ![](static/atom-on-windows-path.png)
-
-1. Install a terminal: `apm install terminus`
+#### Install terminus
+```
+apm install terminus
+```
 
 ## Install Other Useful Packages
 
